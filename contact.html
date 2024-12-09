@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info - Andrew Ross Guitar Lessons</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Andrew Ross Guitar Lessons</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Info</a>
+        <a href="content.html">What you'll learn</a>
+    </nav>
+
+    <main>
+        <h2>How can I help you? Got any questions?</h2>
+        <p>Email: aross9913@gmail.com</p>
+        <p>Phone: 859.229.2599</p>
+
+        <!-- Contact Form -->
+        <!-- <form id="contact-form">
+            <label for="user-email">Your Email:</label>
+            <input type="email" id="user-email" name="user-email" required>
+
+            <label for="message">Your Question:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form> -->
+    </main>
+
+    <footer>
+        <p>© 2024 Andrew Ross Guitar Lessons</p>
+    </footer>
+<!-- 
+    <script>
+       YOUR_USER_ID = 'Andrew Ross';
+       YOUR_SERVICE_ID = 'Gmail'
+        emailjs.init('YOUR_USER_ID'); // Replace with your EmailJS User ID
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form data
+            const userEmail = document.getElementById('user-email').value;
+            const message = document.getElementById('message').value;
+
+            // Prepare email parameters
+            const emailParams = {
+                user_email: userEmail,
+                message: message
+            };
+
+            // Send email via EmailJS (replace 'YOUR_SERVICE_ID' with your service ID)
+            emailjs.send('YOUR_SERVICE_ID', '', emailParams)
+                .then(function(response) {
+                    alert('Your message was sent successfully!');
+                }, function(error) {
+                    alert('Oops! Something went wrong. Please try again later.');
+                });
+
+            // Reset the form
+            document.getElementById('contact-form').reset();
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    font-family: 'Coda', sans-serif;
+    background: linear-gradient(to bottom, #FFFFFF, #567d4b); /* White to dark green gradient */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+/* Main content styles */
+main {
+    flex: 1; /* Allows the main content to grow and take up available space */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content */
+    text-align: center; /* Centers the text */
+}
+
+p {
+    text-indent: 30px;
+    line-height: 1.6;
+}
+
+/* Header and Footer with a gradient from Bourbon Brown to Dark Brown */
+header, footer {
+    background: linear-gradient(to bottom, #6B4F33, #4A3721); /* Bourbon brown to dark brown */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navbar with lighter maple gradient (fretboard effect) */
+nav {
+    background: linear-gradient(to bottom, #A88D4A, #7E6635); /* Maple wood lighter brown to darker brown */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #8E5A3E; /* Lighter bourbon barrel color */
+    border: 2px solid #8E5A3E;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: inline-block;
+    background: linear-gradient(135deg, #8E5A3E, #6B4F33); /* Subtle wood grain gradient */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3); /* Frets effect for buttons */
+}
+
+/* Navbar button hover effect */
+nav a:hover {
+    background-color: #6A3F37; /* Darker bourbon color */
+    border-color: #D59B6A;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5); /* Darker frets effect */
+}
+
+li {
+    text-align: center; /* Left align list items */
+    margin-bottom: 5px; /* Add some space between items */
+    list-style-type: none;
+}
+/* Footer text */
+footer p {
+    font-size: 0.9em;
+}
+
+/* Button Frets Effect: Create dark margins to simulate guitar frets */
+nav a {
+    border: 2px solid #6B4F33;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    border: 2px solid #4A3721; /* Darker border to mimic fret line */
+}
