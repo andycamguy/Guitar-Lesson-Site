@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info - Andrew Ross Guitar Lessons</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,52 +22,32 @@
         <p>Email: aross9913@gmail.com</p>
         <p>Phone: 859.229.2599</p>
 
-        <!-- Contact Form -->
-        <!-- <form id="contact-form">
-            <label for="user-email">Your Email:</label>
-            <input type="email" id="user-email" name="user-email" required>
+        <!-- SVG Section -->
+        <div style="text-align: center; margin-top: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+                <!-- Staff lines -->
+                <rect y="20" width="200" height="2" fill="black" />
+                <rect y="30" width="200" height="2" fill="black" />
+                <rect y="40" width="200" height="2" fill="black" />
+                <rect y="50" width="200" height="2" fill="black" />
+                <rect y="60" width="200" height="2" fill="black" />
 
-            <label for="message">Your Question:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <!-- Musical notes -->
+                <circle cx="50" cy="45" r="5" fill="black" />
+                <rect x="52" y="25" width="2" height="20" fill="black" />
 
-            <button type="submit">Send Message</button>
-        </form> -->
+                <circle cx="80" cy="35" r="5" fill="black" />
+                <rect x="82" y="15" width="2" height="20" fill="black" />
+                <path d="M84 15 Q90 10 95 15" stroke="black" fill="transparent" stroke-width="2" />
+
+                <circle cx="110" cy="45" r="5" fill="black" />
+                <rect x="112" y="25" width="2" height="20" fill="black" />
+            </svg>
+        </div>
     </main>
 
     <footer>
         <p>© 2024 Andrew Ross Guitar Lessons</p>
     </footer>
-<!-- 
-    <script>
-       YOUR_USER_ID = 'Andrew Ross';
-       YOUR_SERVICE_ID = 'Gmail'
-        emailjs.init('YOUR_USER_ID'); // Replace with your EmailJS User ID
-
-        // Handle form submission
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Get form data
-            const userEmail = document.getElementById('user-email').value;
-            const message = document.getElementById('message').value;
-
-            // Prepare email parameters
-            const emailParams = {
-                user_email: userEmail,
-                message: message
-            };
-
-            // Send email via EmailJS (replace 'YOUR_SERVICE_ID' with your service ID)
-            emailjs.send('YOUR_SERVICE_ID', '', emailParams)
-                .then(function(response) {
-                    alert('Your message was sent successfully!');
-                }, function(error) {
-                    alert('Oops! Something went wrong. Please try again later.');
-                });
-
-            // Reset the form
-            document.getElementById('contact-form').reset();
-        });
-    </script> -->
 </body>
 </html>
